@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Page } from '../app';
-
 interface ReportItem {
   id: string;
   category: string;
@@ -11,7 +9,7 @@ interface ReportItem {
   statusColor: string;
 }
 
-export const StatusList: React.FC<{ onNavigate: (page: Page) => void }> = ({ onNavigate }) => {
+export const StatusList: React.FC = () => {
   const [filter, setFilter] = useState<string>('Todos');
 
   // Dados fictícios baseados no ecossistema do app em Fortaleza

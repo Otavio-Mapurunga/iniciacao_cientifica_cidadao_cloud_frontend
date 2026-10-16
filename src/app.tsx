@@ -56,7 +56,7 @@ function App() {
       )}
 
       {currentPage === 'status' && (
-        <StatusList onNavigate={navigateTo} />
+        <StatusList />
       )}
 
       {currentPage === 'about' && (
